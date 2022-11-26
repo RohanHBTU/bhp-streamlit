@@ -54,5 +54,6 @@ if st.button('Make Prediction'):
         x[loc_index] = 1
 
     output=round(model.predict([x])[0],2)
+    st.balloons()
     st.write(f"Your estimated price is: ₹ {output} Lakh.")
     st.write(f"Thank you! I hope you liked it.")
