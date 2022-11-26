@@ -54,6 +54,9 @@ if st.button('Make Prediction'):
         x[loc_index] = 1
 
     output=round(model.predict([x])[0],2)
-    st.balloons()
-    st.write(f"Your estimated price is: ₹ {output} Lakh.")
-    st.write(f"Thank you! I hope you liked it.")
+    #st.balloons()
+    st.success(f"Your estimated price is: ₹ {output} Lakh.")
+    #st.subheader("Thank you! I hope you liked it.", anchor=None)
+    #st.write(f"Your estimated price is: ₹ {output} Lakh.")
+    st.write("Thank you! I hope you liked it. ")
+    st.write("Check out this Repo's [GitHub Link](https://github.com/RohanHBTU/bhp-streamlit)")
